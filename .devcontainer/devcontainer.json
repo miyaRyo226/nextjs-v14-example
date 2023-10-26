@@ -1,0 +1,13 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "Untitled Node.js project",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+"remoteUser": "node",
+"mounts": [{"type": "bind","source": "/Users/ryoya/.ssh","target": "/home/node/.ssh"}],
+"features": {
+	"ghcr.io/devcontainers/features/git:1": {},
+	"ghcr.io/devcontainers/features/github-cli:1": {}
+}
+}
